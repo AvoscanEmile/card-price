@@ -1,0 +1,47 @@
+/* Variables */
+
+:root {
+
+    /* Colors */
+
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-yellow: hsl(71, 73%, 54%);
+    --clr-gray: hsl(204, 43%, 93%);
+    --clr-blue: hsl(218, 22%, 67%); 
+
+    /* Fonts */
+
+    --ff: 'Karla', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-h1: 32px;
+    --fs-h2: 26px;
+    --fs-p: 18px;
+    --fs-li: 16px;
+   
+}
+
+/* General Styling */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-row-gap: 30px;
+    grid-template-areas: 
+    ". . ."
+    ". m ."
+    ". f .";
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--clr-gray);
+}
+
