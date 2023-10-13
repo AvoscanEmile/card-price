@@ -168,6 +168,7 @@ body {
     font-weight: var(--fw-regular);
     margin-bottom: 3px;
     transition: all 100ms;
+    cursor: default;
 }
 
 .reasons__reason:hover {
